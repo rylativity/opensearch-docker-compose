@@ -9,3 +9,6 @@ You can also just replace all certificates with your own certificates.
 * Run `./generate_certs.sh` to generate the certificates
 * You may need to modify the permissions of the certificates so that the container can read them.  Run `chmod a+r ./*`
 * Run `docker-compose up -d`
+
+
+* To create new hash passwords that you can include in internal_users.yml, run `docker-compose exec opensearch-node1 /usr/share/opensearch/plugins/opensearch-security/tools/hash.sh`
